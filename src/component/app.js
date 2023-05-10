@@ -1,3 +1,5 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-restricted-globals */
 const data = {
   currentUser: {
     image: {

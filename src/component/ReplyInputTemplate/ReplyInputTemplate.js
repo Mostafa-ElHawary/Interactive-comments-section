@@ -1,5 +1,6 @@
 import React from 'react'
 import '../app'
+import '../../style.css'
 
 function ReplyInputTemplate() {
   return (

@@ -23,6 +23,7 @@ import {
   Cbody,
   Repliescommentswrp,
 } from "./CommentTemplateStyle";
+import '../../style.css'
 function CommentTemplate() {
   return (
     <Template className="comment-template ">
