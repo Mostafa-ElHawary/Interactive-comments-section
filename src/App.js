@@ -1,7 +1,7 @@
 import React from "react";
-import GlobalStyle from "./globalStyle";
 import { BrowserRouter as Router, Switch } from "react-router-dom"; // Rout
 import { Hstyle  , Cont} from "./localStyle";
+import GlobalStyle from "./globalStyle";
 // import Home from "./component/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -12,7 +12,7 @@ const TemporaryProject = true
 function App() {
   return (
     <Router>
-      <GlobalStyle />
+      <GlobalStyle/>
       <Router></Router>
       <Switch>   
     </Switch>
