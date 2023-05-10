@@ -1,39 +1,53 @@
 import React from "react";
-import '../app'
-import '../../style.css'
-
+import "../app";
+import "../../style.css";
+import {
+  MainUp,
+  Commentsection,
+  Commentswrp,
+  Replyinput,
+  Usrimg,
+  Cmntinput,
+  Buprimary,
+  Modalwrp,
+  Modal,
+  Modalh3,
+  Modalp,
+  ModalBuYes,
+  ModalBuNo,
+} from "./MainStyle";
 function Main() {
   return (
-    <main>
-      <div className="comment-section r">
-        <div className="comments-wrp"></div>
+    <MainUp>
+      <Commentsection className="comment-section r">
+        <Commentswrp className="comments-wrp"></Commentswrp>
 
-        <div className="reply-input container ">
-          <img
+        <Replyinput className="reply-input container ">
+          <Usrimg
             src="images/avatars/image-juliusomo.webp"
             alt=""
             className="usr-img"
           />
-          <textarea
+          <Cmntinput
             className="cmnt-input"
             placeholder="Add a comment..."
-          ></textarea>
-          <button className="bu-primary">SEND</button>
-        </div>
-      </div>
+          ></Cmntinput>
+          <Buprimary className="bu-primary">SEND</Buprimary>
+        </Replyinput>
+      </Commentsection>
 
-      <div className="modal-wrp invisible ">
-        <div className="modal container g">
-          <h3>Delete comment</h3>
-          <p>
+      <Modalwrp className="modal-wrp invisible ">
+        <Modal className="modal container g">
+          <Modalh3>Delete comment</Modalh3>
+          <Modalp>
             Are you sure you want to delete this comment? This will remove the
             comment and cant be undone
-          </p>
-          <button className="yes">YES,DELETE</button>
-          <button className="no">NO,CANCEL</button>
-        </div>
-      </div>
-    </main>
+          </Modalp>
+          <ModalBuYes className="yes">YES,DELETE</ModalBuYes>
+          <ModalBuNo className="no">NO,CANCEL</ModalBuNo>
+        </Modal>
+      </Modalwrp>
+    </MainUp>
   );
 }
 
