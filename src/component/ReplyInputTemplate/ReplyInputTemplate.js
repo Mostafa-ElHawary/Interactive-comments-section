@@ -1,8 +1,8 @@
 import React from "react";
-import "../app";
-import "../../style.css";
+// import "../app";
+// import "../../style.css";
 import { Template, Replyinput , Usrimg, Cmntinput , Buprimary} from "./ReplyInputTemplateStyle";
-function ReplyInputTemplate() {
+export const  ReplyInputTemplate = () =>  {
   return (
     <Template className="reply-input-template ">
       <Replyinput className="reply-input container ">
@@ -21,4 +21,3 @@ function ReplyInputTemplate() {
   );
 }
 
-export default ReplyInputTemplate;
