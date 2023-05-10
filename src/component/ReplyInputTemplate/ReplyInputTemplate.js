@@ -1,17 +1,24 @@
-import React from 'react'
-import '../app'
-import '../../style.css'
-
+import React from "react";
+import "../app";
+import "../../style.css";
+import { Template, Replyinput , Usrimg, Cmntinput , Buprimary} from "./ReplyInputTemplateStyle";
 function ReplyInputTemplate() {
   return (
-    <template className="reply-input-template ">
-    <div className="reply-input container ">
-      <img src="images/avatars/image-juliusomo.webp" alt="" className="usr-img"/>
-      <textarea className="cmnt-input" placeholder="Add a comment..."></textarea>
-      <button className="bu-primary ">SEND</button>
-    </div>
-  </template>
-  )
+    <Template className="reply-input-template ">
+      <Replyinput className="reply-input container ">
+        <Usrimg 
+          src="images/avatars/image-juliusomo.webp"
+          alt=""
+          className="usr-img"
+        />
+        <Cmntinput
+          className="cmnt-input"
+          placeholder="Add a comment..."
+        ></Cmntinput>
+        <Buprimary className="bu-primary ">SEND</Buprimary>
+      </Replyinput>
+    </Template>
+  );
 }
 
-export default ReplyInputTemplate
+export default ReplyInputTemplate;
